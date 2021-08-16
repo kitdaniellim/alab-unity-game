@@ -1,0 +1,445 @@
+fileFormatVersion: 2
+guid: 27a88cb6430fb974fad47f5cc6ded5b3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: native-idol-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 867
+      y: 4
+      width: 718
+      height: 1902
+    spriteID: 52548a2da12369041923643e4c5912c9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 778, y: -104}
+  - name: native-idol-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3055
+      y: 4
+      width: 606
+      height: 1625
+    spriteID: cd9e7c2851ed94c44861698d32e19c45
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2209, y: -263}
+  - name: native-idol-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 4
+      width: 721
+      height: 1399
+    spriteID: 172de35f06f0dd143b1f8e9be41450ce
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 920, y: -512}
+  - name: native-idol-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 855
+      height: 1996
+    spriteID: a093cf0b3c998634eb1004b17bf85e11
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2066, y: 4}
+  - name: native-idol-5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1593
+      y: 4
+      width: 725
+      height: 1705
+    spriteID: 8f63c78adda773043b2c648a08bf8c7b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1331, y: -155}
+  rigSpriteImportData:
+  - name: native-idol-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 867
+      y: 4
+      width: 718
+      height: 1902
+    spriteID: a41a5b7a769ebf5438df9156cd01e96c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 778, y: -104}
+  - name: native-idol-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3055
+      y: 4
+      width: 606
+      height: 1625
+    spriteID: 75f69b0226ba7574da55f3bf89059d0d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2209, y: -263}
+  - name: native-idol-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 4
+      width: 721
+      height: 1399
+    spriteID: a26a64aefa351204f9161788c9b6456f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 920, y: -512}
+  - name: native-idol-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 855
+      height: 1996
+    spriteID: 84881efc4df1dc24491b44d7bcd244e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2066, y: 4}
+  - name: native-idol-5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1593
+      y: 4
+      width: 725
+      height: 1705
+    spriteID: 61879996e30fa2a4e80ee6086d97d3be
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1331, y: -155}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 0
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 3840, y: 2160}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 4096
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers:
+  - name: native-idol-1
+    spriteName: native-idol-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 52548a2da12369041923643e4c5912c9
+    layerID: 6
+    mosaicPosition: {x: 867, y: 4}
+  - name: native-idol-2
+    spriteName: native-idol-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cd9e7c2851ed94c44861698d32e19c45
+    layerID: 7
+    mosaicPosition: {x: 3055, y: 4}
+  - name: native-idol-3
+    spriteName: native-idol-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 172de35f06f0dd143b1f8e9be41450ce
+    layerID: 8
+    mosaicPosition: {x: 2326, y: 4}
+  - name: native-idol-4
+    spriteName: native-idol-4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a093cf0b3c998634eb1004b17bf85e11
+    layerID: 9
+    mosaicPosition: {x: 4, y: 4}
+  - name: native-idol-5
+    spriteName: native-idol-5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8f63c78adda773043b2c648a08bf8c7b
+    layerID: 10
+    mosaicPosition: {x: 1593, y: 4}
+  rigPSDLayers:
+  - name: native-idol-1
+    spriteName: native-idol-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a41a5b7a769ebf5438df9156cd01e96c
+    layerID: 6
+    mosaicPosition: {x: 867, y: 4}
+  - name: native-idol-2
+    spriteName: native-idol-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 75f69b0226ba7574da55f3bf89059d0d
+    layerID: 7
+    mosaicPosition: {x: 3055, y: 4}
+  - name: native-idol-3
+    spriteName: native-idol-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a26a64aefa351204f9161788c9b6456f
+    layerID: 8
+    mosaicPosition: {x: 2326, y: 4}
+  - name: native-idol-4
+    spriteName: native-idol-4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 84881efc4df1dc24491b44d7bcd244e3
+    layerID: 9
+    mosaicPosition: {x: 4, y: 4}
+  - name: native-idol-5
+    spriteName: native-idol-5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 61879996e30fa2a4e80ee6086d97d3be
+    layerID: 10
+    mosaicPosition: {x: 1593, y: 4}
+  sharedRigPSDLayers: []
+  generateGOHierarchy: 0
+  textureAssetName: native-idols Texture
+  prefabAssetName: native-idols Prefab
+  spriteLibAssetName: native-idols Sprite Lib
+  skeletonAssetName: native-idols Skeleton
+  secondarySpriteTextures: []

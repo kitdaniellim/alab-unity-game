@@ -1,0 +1,1837 @@
+fileFormatVersion: 2
+guid: 0e6f558f66669734bae3c79cebf7373b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: longstick-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 267
+      y: 2414
+      width: 189
+      height: 833
+    spriteID: c1af5242883777a4ab5cb06e70ff337d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 102, y: 1147}
+  - name: longstick-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2414
+      width: 255
+      height: 1031
+    spriteID: c93972e74c2dfc443982ef513454972d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -989, y: 1315}
+  - name: rock-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1781
+      width: 607
+      height: 625
+    spriteID: 1b97d4b859c7dd840b91f0e119489071
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -329, y: 380}
+  - name: rock-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 4
+      width: 708
+      height: 362
+    spriteID: 474a6a9b7f533f64f8a5d5a9c9ce76ec
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 931, y: -1048}
+  - name: rock-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 601
+      width: 603
+      height: 766
+    spriteID: c62574fb2e799d044b336c8f8dfecf0f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1264, y: -534}
+  - name: rock-extra-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 1364
+      width: 374
+      height: 346
+    spriteID: abb8b79c8c45d4742b886ca00b543906
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -593, y: -334}
+  - name: pebble-bundle-extra
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1147
+      height: 589
+    spriteID: 60b600a2a17cb5f4093ce4d3a2b6bd5d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -502, y: -451}
+  - name: large-pebble-extra
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3921
+      width: 543
+      height: 167
+    spriteID: 1b6dcf0856850b147aff21bcf05273a9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1671, y: 3113}
+  - name: pebble-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 267
+      y: 3255
+      width: 330
+      height: 117
+    spriteID: 3abef3d21195ffc48992ceaeea1a57c1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -600, y: 2419}
+  - name: pebble-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2881
+      width: 280
+      height: 210
+    spriteID: 23ff6c559447a074aaefdb21e1f372be
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -225, y: 2433}
+  - name: rag-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1375
+      width: 1067
+      height: 398
+    spriteID: f78757ebac2864146a517ce49017d276
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -417, y: 1302}
+  - name: rag-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 374
+      width: 556
+      height: 259
+    spriteID: e7a6accb59c12db4fb3d6edaf5b84c86
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1155, y: -728}
+  - name: sack-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 1781
+      width: 406
+      height: 431
+    spriteID: a62769467f4c53449aae6be0c6cdcc14
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1634, y: 1179}
+  - name: sack-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 1718
+      width: 342
+      height: 374
+    spriteID: 183f20974bd6ab94ea01f2fadcc6a1b2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1535, y: 1048}
+  - name: jar-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 641
+      width: 308
+      height: 430
+    spriteID: 0152282227c3ce642a76b9d75f4281f2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -762, y: 581}
+  - name: jar-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 953
+      width: 396
+      height: 406
+    spriteID: 6a18e9e33cd3766489fe765d61c208bb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1669, y: 885}
+  - name: jar-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3453
+      width: 403
+      height: 460
+    spriteID: b3b90c07df1a33c46a46bd22d0efe29c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2675, y: 3383}
+  - name: plank-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 415
+      y: 3453
+      width: 133
+      height: 439
+    spriteID: e4719d0d0edcda34f902f56b4b0a551c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1371, y: 3131}
+  - name: plank-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 3235
+      width: 209
+      height: 665
+    spriteID: 28b4221ce15152442a297c61e5186009
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1304, y: 2228}
+  - name: plank-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 2626
+      width: 236
+      height: 601
+    spriteID: d4443fe0cc3ebc34799e27af485bdeb9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1530, y: 1255}
+  - name: bush-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 2220
+      width: 389
+      height: 398
+    spriteID: 887ab4e484721114ba82a633981367a6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 551, y: 1573}
+  - name: bush-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2393
+      width: 346
+      height: 309
+    spriteID: 0e68a170506e7974d85ea1f04a5a5c1b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1074, y: 2090}
+  - name: bush-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 1079
+      width: 478
+      height: 277
+    spriteID: 0d12b9f559b22e249b00fd9769bb4f32
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1356, y: -683}
+  - name: bush-extra-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 601
+      width: 528
+      height: 344
+    spriteID: 685649c368d37e640b7c898341b4e266
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2484, y: -1144}
+  - name: bush-extra-5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2710
+      width: 389
+      height: 163
+    spriteID: 8c6ecc73207026e4890a9f204ea2665d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1359, y: 1155}
+  - name: bush-extra-6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 3099
+      width: 346
+      height: 113
+    spriteID: d263cd7e8957a74478f8988d664d32ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1823, y: 1491}
+  - name: bush-extra-7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 3908
+      width: 162
+      height: 101
+    spriteID: 0e538dd2c8cfc724fb7af392bf2f5ca3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2795, y: 2327}
+  - name: bush-extra-8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1447
+      y: 2881
+      width: 177
+      height: 85
+    spriteID: acf29498324868949bb8ad30b8aea153
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1521, y: 1394}
+  - name: bush-extra-9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2100
+      width: 417
+      height: 285
+    spriteID: 3f1e630f4c839af4ebcc14b5bb0142da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2007, y: 862}
+  rigSpriteImportData:
+  - name: longstick-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 267
+      y: 2414
+      width: 189
+      height: 833
+    spriteID: c77bc55a1d815ed478c7b1776174b3b0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 102, y: 1147}
+  - name: longstick-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2414
+      width: 255
+      height: 1031
+    spriteID: 67d48e1686f433e4694e2acbba0bea4a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -989, y: 1315}
+  - name: rock-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1781
+      width: 607
+      height: 625
+    spriteID: d9ffc3b8c06bfbf409382f3ee825e4f7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -329, y: 380}
+  - name: rock-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 4
+      width: 708
+      height: 362
+    spriteID: 598c0ef30c1e23a458a9350a175c2d76
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 931, y: -1048}
+  - name: rock-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 601
+      width: 603
+      height: 766
+    spriteID: 96e53237d90f61940bd6e041a3e6a9af
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1264, y: -534}
+  - name: rock-extra-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 1364
+      width: 374
+      height: 346
+    spriteID: 143ab2c3abdcf734aa3bf9a1e2d03569
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -593, y: -334}
+  - name: pebble-bundle-extra
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1147
+      height: 589
+    spriteID: 259022d64c46b0f4dbc288682eca185c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -502, y: -451}
+  - name: large-pebble-extra
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3921
+      width: 543
+      height: 167
+    spriteID: 034891c591790c641949234976532d3c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1671, y: 3113}
+  - name: pebble-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 267
+      y: 3255
+      width: 330
+      height: 117
+    spriteID: f8f4c08b2bf6b434aa26d8cd841dad62
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -600, y: 2419}
+  - name: pebble-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2881
+      width: 280
+      height: 210
+    spriteID: 5934088540cfd3242ac5a993215e2e41
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -225, y: 2433}
+  - name: rag-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1375
+      width: 1067
+      height: 398
+    spriteID: 756010ed0608dca4d9a2184e0b88ca5a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -417, y: 1302}
+  - name: rag-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 374
+      width: 556
+      height: 259
+    spriteID: ce0dc16a23488644e8b173c1819f741a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1155, y: -728}
+  - name: sack-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 1781
+      width: 406
+      height: 431
+    spriteID: 18aedb811e916fd4985e27acd931e6e4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1634, y: 1179}
+  - name: sack-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 1718
+      width: 342
+      height: 374
+    spriteID: e6fc9a9fbdd2f6f47b2f0692ff7c5fd7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1535, y: 1048}
+  - name: jar-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 641
+      width: 308
+      height: 430
+    spriteID: 489a8c9477a20374092cf2b9faf12f18
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -762, y: 581}
+  - name: jar-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 953
+      width: 396
+      height: 406
+    spriteID: f067f720eb1047c479df2fa1eac47354
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1669, y: 885}
+  - name: jar-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3453
+      width: 403
+      height: 460
+    spriteID: 60f5216bc5c4af643825796efc76d4eb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2675, y: 3383}
+  - name: plank-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 415
+      y: 3453
+      width: 133
+      height: 439
+    spriteID: 34c168d58dd78e24f8022a60cc675e3f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1371, y: 3131}
+  - name: plank-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 3235
+      width: 209
+      height: 665
+    spriteID: 1a42408450eac544f889150c9cbae5e8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1304, y: 2228}
+  - name: plank-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 2626
+      width: 236
+      height: 601
+    spriteID: bf477cd8a4e86284981e4f385f151e10
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1530, y: 1255}
+  - name: bush-extra-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 2220
+      width: 389
+      height: 398
+    spriteID: 0710ad86f472a6b4ca48189bb1883bd7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 551, y: 1573}
+  - name: bush-extra-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2393
+      width: 346
+      height: 309
+    spriteID: d6099d3e006687b4f8d9150f0fd8661b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1074, y: 2090}
+  - name: bush-extra-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 1079
+      width: 478
+      height: 277
+    spriteID: 44a86da13dadc7644a2ee918f2b38e13
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1356, y: -683}
+  - name: bush-extra-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 615
+      y: 601
+      width: 528
+      height: 344
+    spriteID: d3e0e0be13114af49b38a847ad1a0eda
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2484, y: -1144}
+  - name: bush-extra-5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2710
+      width: 389
+      height: 163
+    spriteID: 9535cbb35851e7240ba7018e391f9e13
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1359, y: 1155}
+  - name: bush-extra-6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 3099
+      width: 346
+      height: 113
+    spriteID: 5a5e4a43ab650bf4bab42a4ce4176dfa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1823, y: 1491}
+  - name: bush-extra-7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 619
+      y: 3908
+      width: 162
+      height: 101
+    spriteID: d0b902cfea9d9f549a081b8e534adc3f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2795, y: 2327}
+  - name: bush-extra-8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1447
+      y: 2881
+      width: 177
+      height: 85
+    spriteID: 725e91db2f9bfae45a7b70031f9e3944
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1521, y: 1394}
+  - name: bush-extra-9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1159
+      y: 2100
+      width: 417
+      height: 285
+    spriteID: 57d7f8bc898228a42af55d9e149b842e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2007, y: 862}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 0
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 2048
+  documentSize: {x: 3840, y: 2160}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers:
+  - name: longstick-extra-1
+    spriteName: longstick-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c1af5242883777a4ab5cb06e70ff337d
+    layerID: 5
+    mosaicPosition: {x: 267, y: 2414}
+  - name: longstick-extra-2
+    spriteName: longstick-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c93972e74c2dfc443982ef513454972d
+    layerID: 8
+    mosaicPosition: {x: 4, y: 2414}
+  - name: rock-extra-1
+    spriteName: rock-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b97d4b859c7dd840b91f0e119489071
+    layerID: 6
+    mosaicPosition: {x: 4, y: 1781}
+  - name: rock-extra-2
+    spriteName: rock-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 474a6a9b7f533f64f8a5d5a9c9ce76ec
+    layerID: 7
+    mosaicPosition: {x: 1159, y: 4}
+  - name: rock-extra-3
+    spriteName: rock-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c62574fb2e799d044b336c8f8dfecf0f
+    layerID: 9
+    mosaicPosition: {x: 4, y: 601}
+  - name: rock-extra-4
+    spriteName: rock-extra-4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: abb8b79c8c45d4742b886ca00b543906
+    layerID: 10
+    mosaicPosition: {x: 1159, y: 1364}
+  - name: pebble-bundle-extra
+    spriteName: pebble-bundle-extra
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 60b600a2a17cb5f4093ce4d3a2b6bd5d
+    layerID: 11
+    mosaicPosition: {x: 4, y: 4}
+  - name: large-pebble-extra
+    spriteName: large-pebble-extra
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b6dcf0856850b147aff21bcf05273a9
+    layerID: 12
+    mosaicPosition: {x: 4, y: 3921}
+  - name: pebble-extra-1
+    spriteName: pebble-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3abef3d21195ffc48992ceaeea1a57c1
+    layerID: 13
+    mosaicPosition: {x: 267, y: 3255}
+  - name: pebble-extra-2
+    spriteName: pebble-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23ff6c559447a074aaefdb21e1f372be
+    layerID: 14
+    mosaicPosition: {x: 1159, y: 2881}
+  - name: rag-extra-1
+    spriteName: rag-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f78757ebac2864146a517ce49017d276
+    layerID: 15
+    mosaicPosition: {x: 4, y: 1375}
+  - name: rag-extra-2
+    spriteName: rag-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e7a6accb59c12db4fb3d6edaf5b84c86
+    layerID: 16
+    mosaicPosition: {x: 1159, y: 374}
+  - name: sack-extra-1
+    spriteName: sack-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a62769467f4c53449aae6be0c6cdcc14
+    layerID: 17
+    mosaicPosition: {x: 619, y: 1781}
+  - name: sack-extra-2
+    spriteName: sack-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 183f20974bd6ab94ea01f2fadcc6a1b2
+    layerID: 18
+    mosaicPosition: {x: 1159, y: 1718}
+  - name: jar-extra-1
+    spriteName: jar-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0152282227c3ce642a76b9d75f4281f2
+    layerID: 19
+    mosaicPosition: {x: 1159, y: 641}
+  - name: jar-extra-2
+    spriteName: jar-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a18e9e33cd3766489fe765d61c208bb
+    layerID: 20
+    mosaicPosition: {x: 615, y: 953}
+  - name: jar-extra-3
+    spriteName: jar-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b3b90c07df1a33c46a46bd22d0efe29c
+    layerID: 21
+    mosaicPosition: {x: 4, y: 3453}
+  - name: plank-extra-1
+    spriteName: plank-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e4719d0d0edcda34f902f56b4b0a551c
+    layerID: 22
+    mosaicPosition: {x: 415, y: 3453}
+  - name: plank-extra-2
+    spriteName: plank-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28b4221ce15152442a297c61e5186009
+    layerID: 23
+    mosaicPosition: {x: 619, y: 3235}
+  - name: plank-extra-3
+    spriteName: plank-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d4443fe0cc3ebc34799e27af485bdeb9
+    layerID: 24
+    mosaicPosition: {x: 619, y: 2626}
+  - name: bush-extra-1
+    spriteName: bush-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 887ab4e484721114ba82a633981367a6
+    layerID: 25
+    mosaicPosition: {x: 619, y: 2220}
+  - name: bush-extra-2
+    spriteName: bush-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0e68a170506e7974d85ea1f04a5a5c1b
+    layerID: 26
+    mosaicPosition: {x: 1159, y: 2393}
+  - name: bush-extra-3
+    spriteName: bush-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d12b9f559b22e249b00fd9769bb4f32
+    layerID: 27
+    mosaicPosition: {x: 1159, y: 1079}
+  - name: bush-extra-4
+    spriteName: bush-extra-4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 685649c368d37e640b7c898341b4e266
+    layerID: 28
+    mosaicPosition: {x: 615, y: 601}
+  - name: bush-extra-5
+    spriteName: bush-extra-5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8c6ecc73207026e4890a9f204ea2665d
+    layerID: 29
+    mosaicPosition: {x: 1159, y: 2710}
+  - name: bush-extra-6
+    spriteName: bush-extra-6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d263cd7e8957a74478f8988d664d32ba
+    layerID: 30
+    mosaicPosition: {x: 1159, y: 3099}
+  - name: bush-extra-7
+    spriteName: bush-extra-7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0e538dd2c8cfc724fb7af392bf2f5ca3
+    layerID: 31
+    mosaicPosition: {x: 619, y: 3908}
+  - name: bush-extra-8
+    spriteName: bush-extra-8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: acf29498324868949bb8ad30b8aea153
+    layerID: 32
+    mosaicPosition: {x: 1447, y: 2881}
+  - name: bush-extra-9
+    spriteName: bush-extra-9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3f1e630f4c839af4ebcc14b5bb0142da
+    layerID: 33
+    mosaicPosition: {x: 1159, y: 2100}
+  rigPSDLayers:
+  - name: longstick-extra-1
+    spriteName: longstick-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c77bc55a1d815ed478c7b1776174b3b0
+    layerID: 5
+    mosaicPosition: {x: 267, y: 2414}
+  - name: longstick-extra-2
+    spriteName: longstick-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 67d48e1686f433e4694e2acbba0bea4a
+    layerID: 8
+    mosaicPosition: {x: 4, y: 2414}
+  - name: rock-extra-1
+    spriteName: rock-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d9ffc3b8c06bfbf409382f3ee825e4f7
+    layerID: 6
+    mosaicPosition: {x: 4, y: 1781}
+  - name: rock-extra-2
+    spriteName: rock-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 598c0ef30c1e23a458a9350a175c2d76
+    layerID: 7
+    mosaicPosition: {x: 1159, y: 4}
+  - name: rock-extra-3
+    spriteName: rock-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 96e53237d90f61940bd6e041a3e6a9af
+    layerID: 9
+    mosaicPosition: {x: 4, y: 601}
+  - name: rock-extra-4
+    spriteName: rock-extra-4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 143ab2c3abdcf734aa3bf9a1e2d03569
+    layerID: 10
+    mosaicPosition: {x: 1159, y: 1364}
+  - name: pebble-bundle-extra
+    spriteName: pebble-bundle-extra
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 259022d64c46b0f4dbc288682eca185c
+    layerID: 11
+    mosaicPosition: {x: 4, y: 4}
+  - name: large-pebble-extra
+    spriteName: large-pebble-extra
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 034891c591790c641949234976532d3c
+    layerID: 12
+    mosaicPosition: {x: 4, y: 3921}
+  - name: pebble-extra-1
+    spriteName: pebble-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f8f4c08b2bf6b434aa26d8cd841dad62
+    layerID: 13
+    mosaicPosition: {x: 267, y: 3255}
+  - name: pebble-extra-2
+    spriteName: pebble-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5934088540cfd3242ac5a993215e2e41
+    layerID: 14
+    mosaicPosition: {x: 1159, y: 2881}
+  - name: rag-extra-1
+    spriteName: rag-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 756010ed0608dca4d9a2184e0b88ca5a
+    layerID: 15
+    mosaicPosition: {x: 4, y: 1375}
+  - name: rag-extra-2
+    spriteName: rag-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ce0dc16a23488644e8b173c1819f741a
+    layerID: 16
+    mosaicPosition: {x: 1159, y: 374}
+  - name: sack-extra-1
+    spriteName: sack-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 18aedb811e916fd4985e27acd931e6e4
+    layerID: 17
+    mosaicPosition: {x: 619, y: 1781}
+  - name: sack-extra-2
+    spriteName: sack-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6fc9a9fbdd2f6f47b2f0692ff7c5fd7
+    layerID: 18
+    mosaicPosition: {x: 1159, y: 1718}
+  - name: jar-extra-1
+    spriteName: jar-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 489a8c9477a20374092cf2b9faf12f18
+    layerID: 19
+    mosaicPosition: {x: 1159, y: 641}
+  - name: jar-extra-2
+    spriteName: jar-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f067f720eb1047c479df2fa1eac47354
+    layerID: 20
+    mosaicPosition: {x: 615, y: 953}
+  - name: jar-extra-3
+    spriteName: jar-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 60f5216bc5c4af643825796efc76d4eb
+    layerID: 21
+    mosaicPosition: {x: 4, y: 3453}
+  - name: plank-extra-1
+    spriteName: plank-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 34c168d58dd78e24f8022a60cc675e3f
+    layerID: 22
+    mosaicPosition: {x: 415, y: 3453}
+  - name: plank-extra-2
+    spriteName: plank-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a42408450eac544f889150c9cbae5e8
+    layerID: 23
+    mosaicPosition: {x: 619, y: 3235}
+  - name: plank-extra-3
+    spriteName: plank-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bf477cd8a4e86284981e4f385f151e10
+    layerID: 24
+    mosaicPosition: {x: 619, y: 2626}
+  - name: bush-extra-1
+    spriteName: bush-extra-1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0710ad86f472a6b4ca48189bb1883bd7
+    layerID: 25
+    mosaicPosition: {x: 619, y: 2220}
+  - name: bush-extra-2
+    spriteName: bush-extra-2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6099d3e006687b4f8d9150f0fd8661b
+    layerID: 26
+    mosaicPosition: {x: 1159, y: 2393}
+  - name: bush-extra-3
+    spriteName: bush-extra-3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 44a86da13dadc7644a2ee918f2b38e13
+    layerID: 27
+    mosaicPosition: {x: 1159, y: 1079}
+  - name: bush-extra-4
+    spriteName: bush-extra-4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3e0e0be13114af49b38a847ad1a0eda
+    layerID: 28
+    mosaicPosition: {x: 615, y: 601}
+  - name: bush-extra-5
+    spriteName: bush-extra-5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9535cbb35851e7240ba7018e391f9e13
+    layerID: 29
+    mosaicPosition: {x: 1159, y: 2710}
+  - name: bush-extra-6
+    spriteName: bush-extra-6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a5e4a43ab650bf4bab42a4ce4176dfa
+    layerID: 30
+    mosaicPosition: {x: 1159, y: 3099}
+  - name: bush-extra-7
+    spriteName: bush-extra-7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d0b902cfea9d9f549a081b8e534adc3f
+    layerID: 31
+    mosaicPosition: {x: 619, y: 3908}
+  - name: bush-extra-8
+    spriteName: bush-extra-8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 725e91db2f9bfae45a7b70031f9e3944
+    layerID: 32
+    mosaicPosition: {x: 1447, y: 2881}
+  - name: bush-extra-9
+    spriteName: bush-extra-9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 57d7f8bc898228a42af55d9e149b842e
+    layerID: 33
+    mosaicPosition: {x: 1159, y: 2100}
+  sharedRigPSDLayers: []
+  generateGOHierarchy: 0
+  textureAssetName: Extras Texture
+  prefabAssetName: Extras Prefab
+  spriteLibAssetName: Extras Sprite Lib
+  skeletonAssetName: Extras Skeleton
+  secondarySpriteTextures: []
