@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    //Public Variables
     private bool                isBehaviourChanged = false;
     private int                 aggressionRange = 1;
+    // private bool                playerAlive = true;
 
 
     //Public References
@@ -99,19 +100,25 @@ public class Enemy : MonoBehaviour
         //Die animation
         deathSound.Play();
         anim.SetBool("IsDead", true);
-
-        
     }
 
     public void Attack() {
-        if(Time.time >= nextAttackTime){
+        if(Time.time >= nextAttackTime && !Player.instance.m_isDead){
             slashSound.Play();
             anim.SetTrigger("Attack");
             Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
-            foreach(Collider2D hit in hitPlayers) {
-                Debug.Log("You got hit!");
-                player.GetComponent<Player>().TakeDamage(attackDamage);
+            if(hitPlayers.Length > 0) {
+                Player.instance.TakeDamage(attackDamage);
             }
+
+            // foreach(Collider2D hit in hitPlayers) {
+            //     Debug.Log("You got hit!");
+            //     if(!hit.GetComponent<Player>().m_isDead) {
+            //         hit.GetComponent<Player>().TakeDamage(attackDamage);
+            //     } else {
+            //         playerAlive = false;
+            //     }
+            // }
             nextAttackTime = Time.time + 1f / attackRate;
         }
     }

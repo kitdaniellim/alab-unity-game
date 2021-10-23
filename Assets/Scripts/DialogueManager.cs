@@ -7,30 +7,64 @@ public class DialogueManager : MonoBehaviour
 {
     
     public TextMeshProUGUI textDisplay;
-    public string[] sentences;
-    private int index;
+    public string[] sentences = new string[5];
     public float typingSpeed;
+    private int index;
+    private int arrayLength;
+    private bool isEntered;
 
     public GameObject continueButton;
     public GameObject dialogueImage;
-    private GameObject player;
 
+    #region Singleton
+    public static DialogueManager instance;
+
+    void Awake() {
+        if(instance != null) {
+            Debug.LogWarning("More than one instance of the dialogue manager found!");
+            return;
+        }
+        instance = this;    
+    }
+    #endregion
 
     void Start(){
-        player = GameObject.FindWithTag("Player");
-        player.GetComponent<Player>().toggleMovement();
-        dialogueImage.SetActive(true);
-        StartCoroutine(Type());
+        // Player.instance.toggleMovement();
+        // dialogueImage.SetActive(true);
+        // StartCoroutine(Type());
     }
 
     void Update(){
-        if(textDisplay.text == sentences[index]){
+        // currentlyDisplayedText
+        if(textDisplay.text != "" && textDisplay.text == sentences[index] ){
             continueButton.SetActive(true);
         }
 
         if (Input.GetKeyDown("e")) {
             NextSentence();
         }
+    }
+
+    //Executed when OpenNote function inside Note class is run, displays string content from note onscreen
+    public void EnterDialogue(string[] content){
+        // Player.instance.toggleMovement();
+        if(!isEntered) {
+            Debug.Log("went in");
+            isEntered = true;
+            dialogueImage.SetActive(true);
+            content.CopyTo(sentences, 0);
+            arrayLength = content.Length;
+            StartCoroutine(Type());
+        } else {
+            Debug.Log("went out");
+        }
+    }
+
+    void EndDialogue(){
+        isEntered = false;
+        continueButton.SetActive(false);
+        dialogueImage.SetActive(false);
+        // Player.instance.toggleMovement();
     }
 
     IEnumerator Type(){
@@ -42,15 +76,13 @@ public class DialogueManager : MonoBehaviour
 
     public void NextSentence(){
         continueButton.SetActive(false);
-        if(index < sentences.Length - 1){
+        textDisplay.text = "";
+        if(index < arrayLength - 1){
             index++;
-            textDisplay.text = "";
             StartCoroutine(Type());
         } else {
-            textDisplay.text = "";
-            continueButton.SetActive(false);
-            dialogueImage.SetActive(false);
-            player.GetComponent<Player>().toggleMovement();
+            index = 0;
+            EndDialogue();
         }
     }
 

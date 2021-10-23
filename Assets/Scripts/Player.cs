@@ -10,12 +10,14 @@ public class Player : MonoBehaviour {
     private Rigidbody2D             m_body2d;
     private Sensor_Player           m_groundSensor;
     private bool                    m_grounded = false;
-    private bool                    m_combatIdle = false;
-    private bool                    m_isDead = false;
+    // private bool                    m_combatIdle = false;
+    public bool                     m_isDead = false;
     private bool                    m_outOfBounds = false;
     private bool                    m_movementDisabled = false;
     private float                   nextAttackTime = 0f;
     private int                     currentHealth;
+    private bool                    canInteract = false;
+    private GameObject              interactableObj;
 
     //Player Stats
     [SerializeField] int            maxHearts = 3;
@@ -25,8 +27,8 @@ public class Player : MonoBehaviour {
     [SerializeField] float          attackRange = 0.5f;
     [SerializeField] float          attackRate = 2f;
     [SerializeField] int            attackDamage = 40;
-    [SerializeField] LayerMask      enemyLayers;
     [SerializeField] int            fallBoundary = 300;
+    [SerializeField] LayerMask      enemyLayers;
 
     //Audio
     public AudioSource              slashSound;
@@ -40,12 +42,28 @@ public class Player : MonoBehaviour {
     public Sprite                   emptyHeart;
 
 
+    #region Singleton
+    public static Player instance;
+
+    void Awake() {
+        if(instance != null) {
+            Debug.LogWarning("More than one instance of player found!");
+            return;
+        }
+        instance = this;    
+    }
+    #endregion
+
     // Use this for initialization
     void Start () {
         currentHealth = maxHearts;
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Player>();
+        
+        //Default Combat Idle Animation
+        m_animator.SetInteger("AnimState", 1);
+
         Physics2D.IgnoreLayerCollision(6, 10, true);
         Physics2D.IgnoreLayerCollision(6, 11, true);
     }
@@ -120,14 +138,7 @@ public class Player : MonoBehaviour {
             //     m_isDead = !m_isDead;
             // }
 
-            // if (Input.GetKeyDown("e")) {
-            //     if(!m_isDead)
-            //         m_animator.SetTrigger("Death");
-            //     else
-            //         m_animator.SetTrigger("Recover");
-
-            //     m_isDead = !m_isDead;
-            // }
+            
                 
             //Hurt
             // else if (Input.GetKeyDown("q"))
@@ -135,7 +146,7 @@ public class Player : MonoBehaviour {
 
             // if (Input.GetKeyDown("q"))
             //     m_animator.SetTrigger("Hurt");
-
+            
             //Attack
             if(Input.GetMouseButtonDown(0)) {
                 if(Time.time >= nextAttackTime){
@@ -152,8 +163,13 @@ public class Player : MonoBehaviour {
             }
 
             //Change between idle and combat idle
-            else if (Input.GetKeyDown("f"))
-                m_combatIdle = !m_combatIdle;
+            // else if (Input.GetKeyDown("f"))
+            //     m_combatIdle = !m_combatIdle;
+
+            //Interact with Object
+            else if (Input.GetKeyDown("e") && canInteract) {
+                interactableObj.GetComponent<Interactable>().Interact();
+            }
 
             //Jump
             else if (Input.GetKeyDown("space") && m_grounded) {
@@ -169,8 +185,8 @@ public class Player : MonoBehaviour {
                 m_animator.SetInteger("AnimState", 2);
 
             //Combat Idle
-            else if (m_combatIdle)
-                m_animator.SetInteger("AnimState", 1);
+            // else if (m_combatIdle)
+            //     m_animator.SetInteger("AnimState", 1);
 
             //Idle
             else
@@ -243,6 +259,18 @@ public class Player : MonoBehaviour {
 
         if(other.gameObject.CompareTag("AttackPoint")){
             m_animator.SetTrigger("Hurt");
+        }
+        if(other.gameObject.CompareTag("Interactable")){
+            canInteract = true;
+            interactableObj = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Interactable")){
+            canInteract = false;
+            interactableObj = null;
         }
     }
 

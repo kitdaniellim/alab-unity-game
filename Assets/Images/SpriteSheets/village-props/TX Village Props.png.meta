@@ -19,22 +19,22 @@ TextureImporter:
     second: TX Village Props_4
   - first:
       213: -8353649271199622519
-    second: TX Village Props_5_TorchUnlit
+    second: TX Village Props_5
   - first:
       213: -996102965649306420
     second: TX Village Props_6
   - first:
       213: -8851566310641887263
-    second: TX Village Props_7_ChestClose
+    second: TX Village Props_7
   - first:
       213: -2305204071527019509
-    second: TX Village Props_8_ChestOpen
+    second: TX Village Props_8
   - first:
       213: 4043336235166259366
     second: TX Village Props_9
   - first:
       213: 1869448426372411155
-    second: TX Village Props_10
+    second: TX Village Props_135
   - first:
       213: 1525665788296376077
     second: TX Village Props_11
@@ -49,7 +49,7 @@ TextureImporter:
     second: TX Village Props_14
   - first:
       213: 193480320419989925
-    second: TX Village Props_15_ChairwBack
+    second: TX Village Props_15
   - first:
       213: 6914486449696852669
     second: TX Village Props_16
@@ -73,16 +73,16 @@ TextureImporter:
     second: TX Village Props_22
   - first:
       213: 1270411181061350777
-    second: TX Village Props_23_Note_2
+    second: TX Village Props_23
   - first:
       213: 36442514687755891
-    second: TX Village Props_24_Note_1
+    second: TX Village Props_24
   - first:
       213: -7401429276319471168
-    second: TX Village Props_25_Wine
+    second: TX Village Props_25
   - first:
       213: -5829885690021563978
-    second: TX Village Props_26_Apple
+    second: TX Village Props_26
   - first:
       213: 7569820792969644933
     second: TX Village Props_27
@@ -106,10 +106,10 @@ TextureImporter:
     second: TX Village Props_33
   - first:
       213: -5129409008430789531
-    second: TX Village Props_34_Mug
+    second: TX Village Props_34
   - first:
       213: -5975279711075545993
-    second: TX Village Props_35_Bread
+    second: TX Village Props_35
   - first:
       213: -118116383779398107
     second: TX Village Props_36
@@ -118,10 +118,10 @@ TextureImporter:
     second: TX Village Props_37
   - first:
       213: 8988621687123879679
-    second: TX Village Props_38_Note_3
+    second: TX Village Props_38
   - first:
       213: -5732904109540850938
-    second: TX Village Props_39_Table
+    second: TX Village Props_39
   - first:
       213: -4726597399249516062
     second: TX Village Props_40
@@ -130,7 +130,7 @@ TextureImporter:
     second: TX Village Props_41
   - first:
       213: -8151615092473205008
-    second: TX Village Props_42_Note_4
+    second: TX Village Props_42
   - first:
       213: 2477197507354023845
     second: TX Village Props_43
@@ -139,7 +139,7 @@ TextureImporter:
     second: TX Village Props_44
   - first:
       213: 3294144935178783000
-    second: TX Village Props_45_Statue
+    second: TX Village Props_45
   - first:
       213: 4751279504820561396
     second: TX Village Props_46
@@ -163,13 +163,13 @@ TextureImporter:
     second: TX Village Props_52
   - first:
       213: 480022907733187058
-    second: TX Village Props_53_Cross_2
+    second: TX Village Props_53
   - first:
       213: 6404976508140121465
-    second: TX Village Props_54_Cross_1
+    second: TX Village Props_54
   - first:
       213: 1351563366727975577
-    second: TX Village Props_55_BannerBase
+    second: TX Village Props_55
   - first:
       213: -7561765283760099015
     second: TX Village Props_56
@@ -211,7 +211,7 @@ TextureImporter:
     second: TX Village Props_68
   - first:
       213: -2936729732575071316
-    second: TX Village Props_69_BannerFlag
+    second: TX Village Props_69
   - first:
       213: -4511268829484776745
     second: TX Village Props_70
@@ -298,10 +298,10 @@ TextureImporter:
     second: TX Village Props_97
   - first:
       213: -8892651525179900130
-    second: TX Village Props_98_LongBench
+    second: TX Village Props_98
   - first:
       213: 437199015645751835
-    second: TX Village Props_99_SmallBench
+    second: TX Village Props_99
   - first:
       213: 5007809456758787693
     second: TX Village Props_100
@@ -398,6 +398,15 @@ TextureImporter:
   - first:
       213: 5025334043683600051
     second: TX Village Props_131
+  - first:
+      213: -4722328367209929147
+    second: TX Village Props_135
+  - first:
+      213: 8764429913198262064
+    second: TX Village Props_135
+  - first:
+      213: 8179500775789577335
+    second: TX Village Props_135
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -592,7 +601,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_5_TorchUnlit
+      name: TX Village Props_5
       rect:
         serializedVersion: 2
         x: 499
@@ -634,11 +643,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_7_ChestClose
+      name: TX Village Props_7
       rect:
         serializedVersion: 2
-        x: 93
-        y: 463
+        x: 92
+        y: 462
         width: 38
         height: 32
       alignment: 0
@@ -655,7 +664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_8_ChestOpen
+      name: TX Village Props_8
       rect:
         serializedVersion: 2
         x: 134
@@ -697,13 +706,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_10
+      name: TX Village Props_132
       rect:
         serializedVersion: 2
         x: 209
-        y: 437
-        width: 20
-        height: 52
+        y: 451
+        width: 15
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -802,7 +811,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_15_ChairwBack
+      name: TX Village Props_15
       rect:
         serializedVersion: 2
         x: 360
@@ -970,7 +979,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_23_Note_2
+      name: TX Village Props_23
       rect:
         serializedVersion: 2
         x: 301
@@ -991,7 +1000,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_24_Note_1
+      name: TX Village Props_24
       rect:
         serializedVersion: 2
         x: 315
@@ -1012,7 +1021,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_25_Wine
+      name: TX Village Props_25
       rect:
         serializedVersion: 2
         x: 335
@@ -1033,7 +1042,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_26_Apple
+      name: TX Village Props_26
       rect:
         serializedVersion: 2
         x: 346
@@ -1201,7 +1210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_34_Mug
+      name: TX Village Props_34
       rect:
         serializedVersion: 2
         x: 346
@@ -1222,7 +1231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_35_Bread
+      name: TX Village Props_35
       rect:
         serializedVersion: 2
         x: 359
@@ -1285,7 +1294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_38_Note_3
+      name: TX Village Props_38
       rect:
         serializedVersion: 2
         x: 301
@@ -1306,7 +1315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_39_Table
+      name: TX Village Props_39
       rect:
         serializedVersion: 2
         x: 320
@@ -1369,7 +1378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_42_Note_4
+      name: TX Village Props_42
       rect:
         serializedVersion: 2
         x: 301
@@ -1432,7 +1441,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_45_Statue
+      name: TX Village Props_45
       rect:
         serializedVersion: 2
         x: 406
@@ -1600,7 +1609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_53_Cross_2
+      name: TX Village Props_53
       rect:
         serializedVersion: 2
         x: 344
@@ -1621,7 +1630,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_54_Cross_1
+      name: TX Village Props_54
       rect:
         serializedVersion: 2
         x: 376
@@ -1642,7 +1651,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_55_BannerBase
+      name: TX Village Props_55
       rect:
         serializedVersion: 2
         x: 465
@@ -1936,7 +1945,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_69_BannerFlag
+      name: TX Village Props_69
       rect:
         serializedVersion: 2
         x: 477
@@ -2545,7 +2554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_98_LongBench
+      name: TX Village Props_98
       rect:
         serializedVersion: 2
         x: 4
@@ -2566,7 +2575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Village Props_99_SmallBench
+      name: TX Village Props_99
       rect:
         serializedVersion: 2
         x: 103
@@ -3241,10 +3250,10 @@ TextureImporter:
       name: TX Village Props_131
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
-        width: 512
-        height: 400
+        x: 209
+        y: 451
+        width: 15
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3254,6 +3263,69 @@ TextureImporter:
       bones: []
       spriteID: 3b63077ffa29db540800000000000000
       internalID: 5025334043683600051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village Props_133
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 444
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546a3b7be5be67eb0800000000000000
+      internalID: -4722328367209929147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village Props_134
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 437
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0377df2f19281a970800000000000000
+      internalID: 8764429913198262064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village Props_135
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 437
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77448f46e9c638170800000000000000
+      internalID: 8179500775789577335
       vertices: []
       indices: 
       edges: []

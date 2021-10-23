@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1888899591141426481}
   - component: {fileID: 4746858155857561104}
   m_Layer: 0
-  m_Name: alab temp
+  m_Name: Alab
   m_TagString: Alab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888899591141426492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.547815, y: 3.5999994, z: 0}
-  m_LocalScale: {x: 1.4024, y: 1.4024, z: 1.4024}
+  m_LocalPosition: {x: -16.2062, y: 3.9416, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,10 +72,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1476574257
-  m_SortingLayer: -5
+  m_SortingLayer: -7
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5e5da83166f28694faca5d419755597e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300030, guid: 47d6d26076e81a34c863a03064a7fe77, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -100,7 +100,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.25
+  m_Radius: 0.1
 --- !u!114 &4746858155857561104
 MonoBehaviour:
   m_ObjectHideFlags: 0
