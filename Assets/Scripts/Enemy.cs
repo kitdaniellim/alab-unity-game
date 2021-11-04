@@ -100,6 +100,7 @@ public class Enemy : MonoBehaviour
         //Die animation
         deathSound.Play();
         anim.SetBool("IsDead", true);
+        ScoreManager.updateEnemyScore();
     }
 
     public void Attack() {

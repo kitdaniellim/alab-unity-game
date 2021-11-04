@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Functions simply call Game Master functions
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
@@ -21,24 +22,23 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void Resume () {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
         GameIsPaused = false;
+        pauseMenuUI.SetActive(false);
+        GameMaster.ResumeGame();
     }
 
     void Pause() {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
         GameIsPaused = true;
+        pauseMenuUI.SetActive(true);
+        GameMaster.PauseGame();
     }
 
     public void LoadMenu() {
         Resume(); //Not sure if right to resume
-        SceneManager.LoadScene("MainMenu");
+        GameMaster.ReturnToMainMenu();
     }
 
-    public void QuitGame() {
-        Debug.Log("Quitting game.");
-        Application.Quit();
+    public void Quit() {
+        GameMaster.QuitGame();
     }
 }

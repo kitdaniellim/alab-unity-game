@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage 2.unity
     guid: 9f2228104b0861247bb703399a796f30
+  - enabled: 1
+    path: Assets/Scenes/Questioning.unity
+    guid: 4c06a431d31ba7f4b90cba8a709b092c
   m_configObjects: {}

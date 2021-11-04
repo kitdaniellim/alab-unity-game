@@ -9,7 +9,7 @@ public class Alab : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D other){
        if(other.gameObject.CompareTag("Player")){
-           ScoreManager.instance.ChangeScore(alabValue);
+           ScoreManager.instance.updateAlabScore(alabValue);
        }
    }
 }

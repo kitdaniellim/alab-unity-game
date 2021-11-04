@@ -5,9 +5,10 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+
+    #region Singleton
     public static AudioManager instance;
 
-    // Start is called before the first frame update
     void Awake() {
         if(instance == null) {
             instance = this;
@@ -26,6 +27,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop; 
         }
     }
+    #endregion
 
     //Play sounds you'd want to play at the start of the stage
     void Start() {
@@ -40,5 +42,10 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Playing sound: " + name);
             s.source.Play();
         }
+    }
+
+    public static void StopMusic() {
+        Debug.Log("stopping moosic");
+        // Destroy(this);
     }
 }

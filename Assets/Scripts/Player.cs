@@ -197,6 +197,7 @@ public class Player : MonoBehaviour {
     public void TakeDamage(int damage) {
         if(!m_isDead) {
             currentHealth -= damage; 
+            ScoreManager.updateLifeScore();
             if(currentHealth <= 0){
                 Die();
             } else {
@@ -204,7 +205,7 @@ public class Player : MonoBehaviour {
                 hurtSound.Play();
                 if(m_outOfBounds) {
                     m_movementDisabled = true;
-                    GameMaster.ResetGame();
+                    GameMaster.RestartGame();
                     StartCoroutine(resetState());
                 } else {
                     m_animator.SetTrigger("Hurt");
@@ -222,14 +223,20 @@ public class Player : MonoBehaviour {
         m_isDead = true;
         m_movementDisabled = true;
 
+        
+        //Restart game after 2 seconds
+        Invoke("Retry", 2f);
+        
 
         //Game Over TODO then reset game after clicking retry
     }
 
     private void Retry() {
-        currentHealth = maxHearts;
-        GameMaster.ResetGame();
-        StartCoroutine(resetState());
+        // currentHealth = maxHearts;
+        // GameMaster.RestartGame();
+        // StartCoroutine(resetState());
+
+        GameMaster.EndGame();
     }
 
     private IEnumerator resetState() {
