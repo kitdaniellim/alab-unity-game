@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 //======================== CHALLENGE #1
@@ -32,6 +33,8 @@ public struct question
 public class AdaptiveQManager : MonoBehaviour
 {
     public TextMeshProUGUI questionDisplay;
+    public GameObject resultsPass;
+    public GameObject resultsFail;
     public float typingSpeed;
     public GameObject ChoiceA;
     public GameObject ChoiceB;
@@ -40,8 +43,8 @@ public class AdaptiveQManager : MonoBehaviour
 
     public question[] currentQuestions = new question[5];
     private int index, numQuestions = 5, qScore = 0;
-    private static int currentStage, targetStage;
-    private bool isSet = false;
+    private static int currentStage, targetStage, nextStage;
+    private bool isSet = false, didPass = false;
 
     [SerializeField]
     public question[] stage1Questions = new question[5]{
@@ -117,7 +120,10 @@ public class AdaptiveQManager : MonoBehaviour
     void Start(){
         //======================== CHALLENGE #2 - Randomizing set of questions
         //On start, populate currentQuestions[] array with questions that are unflagged.
-        setStage(1);
+        
+
+        //For debugging purposes, this allows us to play the questioning scene withot going thru the first stage
+        SetStage(1);
     }
 
     void Update(){
@@ -138,8 +144,11 @@ public class AdaptiveQManager : MonoBehaviour
             ToggleActive(false);
         }
 
+        //targetStage variable is used as a temporary holder to track changes of the stage. Once a change of stage is detected, the PopulateQuestions is called
+        //for that specific stage, since there are different sets of questions for each stage)
         if(currentStage != targetStage) {
             currentStage = targetStage;
+            nextStage = currentStage + 1;
             PopulateQuestions();
             StartCoroutine(Type());
         }
@@ -173,6 +182,7 @@ public class AdaptiveQManager : MonoBehaviour
 
     private void DisplayResults() {
         if(qScore >= 3) {
+            didPass = true;
             ScoreManager.calculateTotalScore();
             questionDisplay.text =  "Alab Points: " + ScoreManager.getTotalScore().ToString() + 
                                     "\nEnemy Points: " + ScoreManager.getEnemyScore().ToString() +
@@ -184,6 +194,15 @@ public class AdaptiveQManager : MonoBehaviour
         } else {
             questionDisplay.text = "\nYour questioning score is: " + qScore.ToString() + "/5. \nTry again!";
             //Display Retry button
+        }
+        
+        if(didPass) {
+            //Displaysbutton to proceed to next stage
+            resultsPass.SetActive(true);
+            // didPass = false;
+        } else {
+            //Displays try again button
+            resultsFail.SetActive(true);    
         }
     }
 
@@ -215,10 +234,29 @@ public class AdaptiveQManager : MonoBehaviour
         }
     } 
 
-    public static void setStage(int stageVal) {
+    public static void SetStage(int stageVal) {
         targetStage = stageVal;
         Debug.Log("Set target stage val to : " + stageVal);
     } 
+
+    public void Proceed() {
+        if(currentStage != 4) {
+            Debug.Log("Proceeding to next Stage.. " + nextStage);
+            SceneManager.LoadScene("Stage " + nextStage);
+        } else {
+            Debug.Log("Thank you for playing the game!");
+        }
+    } 
+
+    public void TryAgain() {
+        //Reset values and stage before questioning.
+        currentStage--;
+        nextStage--;
+        SetStage(currentStage);
+        SceneManager.LoadScene("Stage " + nextStage);
+        
+    } 
+
 
     //Easy
     private void EmptyQuestions() {

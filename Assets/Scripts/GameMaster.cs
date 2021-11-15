@@ -41,7 +41,6 @@ public class GameMaster : MonoBehaviour
         // gm.RespawnPlayer();
     }
 
-
     public static void ResumeGame () {
         Debug.Log("Game resumed.");
         Time.timeScale = 1f;
@@ -79,7 +78,7 @@ public class GameMaster : MonoBehaviour
         //Ends game and restarts current stage
         Debug.Log("Questioning Time!");
         SceneManager.LoadScene("Questioning");
-        AdaptiveQManager.setStage(currentStage);
+        AdaptiveQManager.SetStage(currentStage);
     }
 
 
