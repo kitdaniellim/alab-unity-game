@@ -5,11 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
-    public static GameMaster gm;
+    
     // public Transform playerPrefab;
     public Transform playerReference;
     public Transform spawnPoint;
     public float spawnDelay = 1.5f;
+
+
+    #region Singleton
+    public static GameMaster gm;
+
+    void Awake() {
+        if(gm == null) {
+            gm = this;
+        } else {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+    #endregion
     
 
     // Start is called before the first frame update
@@ -79,6 +95,10 @@ public class GameMaster : MonoBehaviour
         Debug.Log("Questioning Time!");
         SceneManager.LoadScene("Questioning");
         AdaptiveQManager.SetStage(currentStage);
+    }
+
+    public static void ProceedToNextStage () {
+
     }
 
 

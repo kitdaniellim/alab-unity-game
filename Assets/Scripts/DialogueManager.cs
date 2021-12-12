@@ -40,7 +40,7 @@ public class DialogueManager : MonoBehaviour
             continueButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown("e")) {
+        if (Input.GetKeyDown("f")) {
             NextSentence();
         }
     }
@@ -49,14 +49,11 @@ public class DialogueManager : MonoBehaviour
     public void EnterDialogue(string[] content){
         // Player.instance.toggleMovement();
         if(!isEntered) {
-            Debug.Log("went in");
             isEntered = true;
             dialogueImage.SetActive(true);
             content.CopyTo(sentences, 0);
             arrayLength = content.Length;
             StartCoroutine(Type());
-        } else {
-            Debug.Log("went out");
         }
     }
 

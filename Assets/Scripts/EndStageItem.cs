@@ -19,6 +19,6 @@ public class EndStageItem : Interactable
 
         //Sample
         Debug.Log("Ending the stage ");
-        GameMaster.ProceedToQuestioning(1);
+        GameMaster.ProceedToQuestioning(AdaptiveQManager.nextStage);
     }
 }
