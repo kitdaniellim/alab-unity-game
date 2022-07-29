@@ -15,15 +15,29 @@ public class GameMaster : MonoBehaviour
     #region Singleton
     public static GameMaster gm;
 
-    void Awake() {
-        if(gm == null) {
-            gm = this;
-        } else {
-            Destroy(gameObject);
-            return;
-        }
+    // void Awake() {
+    //     if(gm == null) {
+    //         gm = this;
+    //     } else {
+    //         Destroy(gameObject);
+    //         return;
+    //     }
 
-        DontDestroyOnLoad(gameObject);
+    //     DontDestroyOnLoad(gameObject);
+    // }
+
+    void Awake() {
+        if (gm == null) {
+            //First run, set the instance
+            gm = this;
+            DontDestroyOnLoad(gameObject);
+        } else if (gm != this) {
+            //Instance is not the same as the one we have, destroy old one, and reset to newest one
+            Debug.LogWarning("More than one instance of the game master found!");
+            Destroy(gm.gameObject);
+            gm = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
     #endregion
     
@@ -87,12 +101,13 @@ public class GameMaster : MonoBehaviour
         //Ends game and restarts current stage
         Debug.Log("GAME OVER - restarting whole game");
         ScoreManager.updateTries();
+        ScoreManager.resetScores();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public static void ProceedToQuestioning (int currentStage) {
         //Ends game and restarts current stage
-        Debug.Log("Questioning Time!");
+        Debug.Log("Questioning Time! " + currentStage);
         SceneManager.LoadScene("Questioning");
         AdaptiveQManager.SetStage(currentStage);
     }

@@ -1462,49 +1462,45 @@ MonoBehaviour:
     answer: 0
     flag: 0
   stage1Questions:
-  - id: 1
-    questionText: What was the name of the Italian explorer who accompanied Ferdinand
-      Magellan?
-    choiceA: Hatdog
-    choiceB: Chimi
-    choiceC: Antonio Pigafetta
-    choiceD: Aaaaaa
-    answer: 3
+  - id: 0
+    questionText: 
+    choiceA: 
+    choiceB: 
+    choiceC: 
+    choiceD: 
+    answer: 0
     flag: 0
-  - id: 2
-    questionText: Pigafetta characterized the people as _______________.
-    choiceA: Hatdog
-    choiceB: very familiar and friendly
-    choiceC: Bggg
-    choiceD: Aaaaaa
-    answer: 2
+  - id: 0
+    questionText: 
+    choiceA: 
+    choiceB: 
+    choiceC: 
+    choiceD: 
+    answer: 0
     flag: 0
-  - id: 3
-    questionText: The name of the first King of Zuluan and Calaguan, whom Magellan
-      had met during his travels.
-    choiceA: Raia Siagu
-    choiceB: Chimi
-    choiceC: Bggg
-    choiceD: Aaaaaa
-    answer: 1
+  - id: 0
+    questionText: 
+    choiceA: 
+    choiceB: 
+    choiceC: 
+    choiceD: 
+    answer: 0
     flag: 0
-  - id: 4
-    questionText: The date when the mass by the shore had presided.
-    choiceA: Hatdog
-    choiceB: Chimi
-    choiceC: Bggg
-    choiceD: March 31st
-    answer: 4
+  - id: 0
+    questionText: 
+    choiceA: 
+    choiceB: 
+    choiceC: 
+    choiceD: 
+    answer: 0
     flag: 0
-  - id: 5
-    questionText: When explaining the reason for the cross, Magellan said the cross
-      would _____________.
-    choiceA: Hatdog
-    choiceB: Chimi
-    choiceC: be beneficial because if other Spaniards come and see the cross, they
-      would not cause troubles
-    choiceD: Aaaaaa
-    answer: 3
+  - id: 0
+    questionText: 
+    choiceA: 
+    choiceB: 
+    choiceC: 
+    choiceD: 
+    answer: 0
     flag: 0
   stage2Questions:
   - id: 0

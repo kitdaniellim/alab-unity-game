@@ -54,7 +54,7 @@ public class AdaptiveQManager : MonoBehaviour
     private bool isSet = false, didPass = false;
 
     [SerializeField]
-    public question[] stage1Questions = new question[]{
+    public question[] stage1Qs = new question[]{
         new question() { 
             id = 1,
             questionText = "What was the name of the Italian explorer who accompanied Ferdinand Magellan?", 
@@ -158,7 +158,7 @@ public class AdaptiveQManager : MonoBehaviour
     };
 
     [SerializeField]
-    public question[] stage2Questions = new question[]{
+    public question[] stage2Qs = new question[]{
         new question() { 
             id = 1,
             questionText = "Magellan and his men reached the port of Cebu on ________.", 
@@ -232,7 +232,7 @@ public class AdaptiveQManager : MonoBehaviour
     };
 
     [SerializeField]
-    public question[] stage3Questions = new question[]{
+    public question[] stage3Qs = new question[]{
         new question() { 
             id = 1,
             questionText = "To show how to be a good Christian, Magellan encouraged the king to ___________.", 
@@ -336,7 +336,7 @@ public class AdaptiveQManager : MonoBehaviour
     };
 
     [SerializeField]
-    public question[] stage4Questions = new question[]{
+    public question[] stage4Qs = new question[]{
         new question() { 
             id = 1,
             questionText = "This man came to Magellan and asked for a boat full of men to fight the chieftain named Lapu-lapu.", 
@@ -423,12 +423,43 @@ public class AdaptiveQManager : MonoBehaviour
     #region Singleton
     public static AdaptiveQManager instance;
 
+    // void Awake() {
+    //     if(instance == null) {
+    //         instance = this;
+    //     } else {
+    //         Debug.LogWarning("More than one instance of the adaptive questioning manager found!");
+    //         return;
+    //     }
+    //     DontDestroyOnLoad(gameObject);
+    // }
+
+
     void Awake() {
-        if(instance != null) {
+        if (instance == null) {
+            //First run, set the instance
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else if (instance != this) {
+            //Instance is not the same as the one we have, destroy old one, and reset to newest one
             Debug.LogWarning("More than one instance of the adaptive questioning manager found!");
-            return;
+            GameObject old = instance.gameObject;
+
+            Debug.Log("accessing or sum shit");
+            Debug.Log(old.GetComponent<AdaptiveQManager>().stage1Qs);
+
+
+
+            Destroy(instance.gameObject);
+            instance = this;
+            this.gameObject.GetComponent<AdaptiveQManager>().stage1Qs = old.GetComponent<AdaptiveQManager>().stage1Qs;
+            this.gameObject.GetComponent<AdaptiveQManager>().stage2Qs = old.GetComponent<AdaptiveQManager>().stage2Qs;
+            this.gameObject.GetComponent<AdaptiveQManager>().stage3Qs = old.GetComponent<AdaptiveQManager>().stage3Qs;
+            this.gameObject.GetComponent<AdaptiveQManager>().stage4Qs = old.GetComponent<AdaptiveQManager>().stage4Qs;
+
+
+
+            DontDestroyOnLoad(gameObject);
         }
-        instance = this;    
     }
     #endregion
 
@@ -442,30 +473,33 @@ public class AdaptiveQManager : MonoBehaviour
         //targetStage variable is used as a temporary holder to track changes (current and previous value) of the stage. 
         //Once a change of stage is detected, the PopulateQuestions() is then called for that specific stage,
         //since there are different sets of questions for each stage
-        if(currentStage != targetStage) {
-            currentStage = targetStage;
-            nextStage = currentStage + 1;
-            PopulateQuestions();
-            StartCoroutine(Type());
-        }
 
-        
-
-        if(questionDisplay.text != "" && questionDisplay.text == currentQuestions[index].questionText ){
-            //======================== CHALLENGE #3 - User Interface buttons - Done
-            //Disable button-clicking while question has not been shown yet
-            if(!isSet) {
-                isSet = true;
-                // Debug.Log(ChoiceA.GetComponent<TextMeshProUGUI>());
-                ChoiceA.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceA;
-                ChoiceB.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceB;
-                ChoiceC.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceC;
-                ChoiceD.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceD;
+        if(SceneManager.GetActiveScene().name == "Questioning") {
+            if(currentStage != targetStage ) {
+                currentStage = targetStage;
+                nextStage = currentStage + 1;
+                PopulateQuestions();
+                StartCoroutine(Type());
             }
-            ToggleActive(true);
-        } else {
-            isSet = false;
-            ToggleActive(false);
+
+            
+
+            if(questionDisplay.text != "" && questionDisplay.text == currentQuestions[index].questionText ){
+                //======================== CHALLENGE #3 - User Interface buttons - Done
+                //Disable button-clicking while question has not been shown yet
+                if(!isSet) {
+                    isSet = true;
+                    // Debug.Log(ChoiceA.GetComponent<TextMeshProUGUI>());
+                    ChoiceA.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceA;
+                    ChoiceB.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceB;
+                    ChoiceC.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceC;
+                    ChoiceD.GetComponent<TextMeshProUGUI>().text = currentQuestions[index].choiceD;
+                }
+                ToggleActive(true);
+            } else {
+                isSet = false;
+                ToggleActive(false);
+            }
         }
     }
 
@@ -474,27 +508,27 @@ public class AdaptiveQManager : MonoBehaviour
     //Questions must be unflagged (haven't been answered correctly before)
     //Calls PickUnflaggedQuestions() based on current stage
     private void PopulateQuestions() {
-        EmptyCurrentQuestionsArray();   //Empty questions array prior
+        // EmptyCurrentQuestionsArray();   //Empty questions array prior
         CheckFlags();
         Debug.Log("Populating with Stage " + currentStage + " questions.");
         switch (currentStage)
         {
             case 1: 
                 Debug.Log("CASE 1");
-                PickUnflaggedQuestions(stage1Questions);
-                // stage1Questions.CopyTo(currentQuestions, 0);
+                PickUnflaggedQuestions(stage1Qs);
+                // stage1Qs.CopyTo(currentQuestions, 0);
                 break;
             case 2: 
                 Debug.Log("CASE 2");
-                PickUnflaggedQuestions(stage2Questions);
+                PickUnflaggedQuestions(stage2Qs);
                 break;
             case 3: 
                 Debug.Log("CASE 3");
-                PickUnflaggedQuestions(stage3Questions);
+                PickUnflaggedQuestions(stage3Qs);
                 break;
             case 4: 
                 Debug.Log("CASE 4");
-                PickUnflaggedQuestions(stage4Questions);
+                PickUnflaggedQuestions(stage4Qs);
                 break;
             
             default: 
@@ -519,14 +553,17 @@ public class AdaptiveQManager : MonoBehaviour
 
             //Keeps looking until a random unique integer between 0 and unflaggedQuestions.Count  is found
             //DEV NOTE: gets more inefficient as the number of questions increases and the number of flagged questions increases
+
+            //CRITICAL TEST NOTE: if number of unflagged questions is less than 5, loop will continue indefinitely since
+            //generated random numbers will not be unique
             while(!found) {
                 randomNum = Random.Range(0, unflaggedQuestions.Count);
-                Debug.Log("Random num value: " + randomNum);
+                // Debug.Log("Random num value: " + randomNum);
                 found = isDuplicate(unflaggedQuestions[randomNum].id);
             }
 
             if(found) {
-                Debug.Log("Unflagged question inserted at index " + i);
+                // Debug.Log("Unflagged question inserted at index " + i);
                 currentQuestions[i] = unflaggedQuestions[randomNum];
             } else {
                 // Debug.Log("unflagged question wasnt found???");
@@ -560,65 +597,65 @@ public class AdaptiveQManager : MonoBehaviour
         switch (currentStage)
         {
             case 1: 
-                for(i = 0, x = 0; i < stage1Questions.Length; i++) {
-                    if(stage1Questions[i].flag == false) {
+                for(i = 0, x = 0; i < stage1Qs.Length; i++) {
+                    if(stage1Qs[i].flag == false) {
                         x++;
                     }
                 }
                 Debug.Log("A total of " + x + " unflagged questions found.");
                 if(x < 5) {
                     Debug.Log("Resetting flags.");
-                    for(i = 0; i < stage1Questions.Length; i++) {
-                        if(stage1Questions[i].flag == true) {
-                            stage1Questions[i].flag = false;
+                    for(i = 0; i < stage1Qs.Length; i++) {
+                        if(stage1Qs[i].flag == true) {
+                            stage1Qs[i].flag = false;
                         }
                     }
                 }
                 break;
             case 2: 
-                for(i = 0, x = 0; i < stage2Questions.Length; i++) {
-                    if(stage2Questions[i].flag == false) {
+                for(i = 0, x = 0; i < stage2Qs.Length; i++) {
+                    if(stage2Qs[i].flag == false) {
                         x++;
                     }
                 }
                 Debug.Log("A total of " + x + " unflagged questions found.");
                 if(x < 5) {
                     Debug.Log("Resetting flags");
-                    for(i = 0; i < stage2Questions.Length; i++) {
-                        if(stage2Questions[i].flag == true) {
-                            stage2Questions[i].flag = false;
+                    for(i = 0; i < stage2Qs.Length; i++) {
+                        if(stage2Qs[i].flag == true) {
+                            stage2Qs[i].flag = false;
                         }
                     }
                 }
                 break;
             case 3: 
-                for(i = 0, x = 0; i < stage3Questions.Length; i++) {
-                    if(stage3Questions[i].flag == false) {
+                for(i = 0, x = 0; i < stage3Qs.Length; i++) {
+                    if(stage3Qs[i].flag == false) {
                         x++;
                     }
                 }
                 Debug.Log("A total of " + x + " unflagged questions found.");
                 if(x < 5) {
                     Debug.Log("Resetting flags");
-                    for(i = 0; i < stage3Questions.Length; i++) {
-                        if(stage3Questions[i].flag == true) {
-                            stage3Questions[i].flag = false;
+                    for(i = 0; i < stage3Qs.Length; i++) {
+                        if(stage3Qs[i].flag == true) {
+                            stage3Qs[i].flag = false;
                         }
                     }
                 }
                 break;
             case 4: 
-                for(i = 0, x = 0; i < stage4Questions.Length; i++) {
-                    if(stage4Questions[i].flag == false) {
+                for(i = 0, x = 0; i < stage4Qs.Length; i++) {
+                    if(stage4Qs[i].flag == false) {
                         x++;
                     }
                 }
                 Debug.Log("A total of " + x + " unflagged questions found.");
                 if(x < 5) {
                     Debug.Log("Resetting flags");
-                    for(i = 0; i < stage4Questions.Length; i++) {
-                        if(stage4Questions[i].flag == true) {
-                            stage4Questions[i].flag = false;
+                    for(i = 0; i < stage4Qs.Length; i++) {
+                        if(stage4Qs[i].flag == true) {
+                            stage4Qs[i].flag = false;
                         }
                     }
                 }
@@ -671,7 +708,7 @@ public class AdaptiveQManager : MonoBehaviour
     private void CheckAnswer(int val) {
         //If correct, qScore++
         //Crosschecks using the currentQuestions[]
-        Debug.Log("Checking answer for stage " + currentStage + " questions.");
+        // Debug.Log("Checking answer for stage " + currentStage + " questions.");
 
         if(val == currentQuestions[index].answer) {
             qScore++;
@@ -679,7 +716,7 @@ public class AdaptiveQManager : MonoBehaviour
             UpdateQScore();
             UpdateQuestionFlag(currentQuestions[index].id);
         } else {
-            Debug.Log("Wrong! You answered: " + val + ". Correct answer: " + currentQuestions[index].answer + " qScore: " + qScore);
+            Debug.Log("WRONG! You answered: " + val + ". Correct answer: " + currentQuestions[index].answer + " qScore: " + qScore);
         }
     }
 
@@ -690,12 +727,20 @@ public class AdaptiveQManager : MonoBehaviour
     //Using the question ID and current stage, updates original question set. 
     //Sets flag value for the associated question to true.
     private void UpdateQuestionFlag(int quid) {
-        Debug.Log("Updating flag value for Question " + quid + " at Stage " + currentStage + " .");
+        // Debug.Log("Updating flag value for Question " + quid + " at Stage " + currentStage + " .");
         switch (currentStage)
         {
             case 1: 
-                Debug.Log("Case 1");
-                stage1Questions[quid - 1].flag = true;
+                stage1Qs[quid - 1].flag = true;
+                break;
+            case 2: 
+                stage2Qs[quid - 1].flag = true;
+                break;
+            case 3: 
+                stage3Qs[quid - 1].flag = true;
+                break;
+            case 4: 
+                stage4Qs[quid - 1].flag = true;
                 break;
             
             default: 
@@ -714,7 +759,7 @@ public class AdaptiveQManager : MonoBehaviour
         if(qScore >= passingScore) {
             didPass = true;
             ScoreManager.calculateTotalScore();
-            questionDisplay.text =  "Alab Points: " + ScoreManager.getTotalScore().ToString() + 
+            questionDisplay.text =  "Alab Points: " + ScoreManager.getAlabScore().ToString() + 
                                     "\nEnemy Points: " + ScoreManager.getEnemyScore().ToString() +
                                     "\nLife Points: " + ScoreManager.getLifeScore().ToString() +
                                     "\nStage Completion Points: " + ScoreManager.getTotalTries().ToString() + 
@@ -743,15 +788,20 @@ public class AdaptiveQManager : MonoBehaviour
 
     public static void SetStage(int stageVal) {
         targetStage = stageVal;
-        Debug.Log("Set target stage val to : " + stageVal);
+        // Debug.Log("Set target stage val to : " + stageVal);
     } 
 
     public void Proceed() {
         if(currentStage != 4) {
             Debug.Log("Proceeding to next Stage.. " + nextStage);
+            ScoreManager.resetTries();
+            ScoreManager.resetScores();
             SceneManager.LoadScene("Stage " + nextStage);
         } else {
-            Debug.Log("Thank you for playing the game!");
+            //show Congratulations Screen
+            Debug.Log("GAME BEAT");
+            resultsPass.GetComponent<TextMeshProUGUI>().text = "Congratulations! You've beaten the game. \nThank you for playing.";
+            SceneManager.LoadScene("MainMenu");
         }
     } 
 

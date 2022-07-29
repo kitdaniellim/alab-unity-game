@@ -97,6 +97,16 @@ public class ScoreManager : MonoBehaviour
         return totalScore;
     }
 
+    public static void resetScores () {
+        alabScore = 0;
+        enemyScore = 0;
+        lifeScore = 3;
+    }
+
+    public static void resetTries () {
+        totalTries = 0;
+    }
+
 
 
 }
